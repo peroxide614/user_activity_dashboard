@@ -1,7 +1,6 @@
 .full-page {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-  grid-template-rows: auto auto auto; /* 3 rows based on content height */
   gap: 20px;
   padding: 20px;
 }
@@ -9,7 +8,6 @@
 .two-biggest {
   display: flex;
   gap: 20px;
-  grid-column: span 2; /* Span across both columns */
 }
 
 .biggest-element {
@@ -25,7 +23,6 @@
 .two-small-elements {
   display: flex;
   gap: 20px; /* Space between the small elements */
-  grid-column: span 2; /* Span across both columns */
 }
 
 .one-line-status {
