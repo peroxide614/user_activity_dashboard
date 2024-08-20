@@ -5,24 +5,14 @@
   padding: 20px;
 }
 
-.two-biggest {
-  display: flex;
-  gap: 20px;
-}
-
 .biggest-element {
   display: flex;
   gap: 10px;
-  flex: 1; /* Ensure both elements share equal space */
+  flex: 1; /* Ensure elements share equal space */
   padding: 20px;
   border-radius: 12px;
   background-color: rgb(255, 240, 240); /* Light red background */
   border: 1px solid #ffcccc;
-}
-
-.two-small-elements {
-  display: flex;
-  gap: 20px; /* Space between the small elements */
 }
 
 .one-line-status {
@@ -32,7 +22,7 @@
   border-radius: 12px;
   background-color: rgb(255, 240, 240); /* Light red background */
   border: 1px solid #ffcccc;
-  flex: 1; /* Ensure both small elements share equal space */
+  flex: 1; /* Ensure elements share equal space */
 }
 
 .status {
