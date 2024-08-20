@@ -1,0 +1,88 @@
+.full-page {
+  padding: 10px;
+
+  .two-small-elements {
+    margin-top: 10px;
+    display: flex;
+
+    .red-small {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+      .redicon {
+        width: 20px;
+        height: 20px;
+      }
+
+      .small-element-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        .name {
+          display: flex;
+          font-weight: 700;
+        }
+
+        .timestamp {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .two-biggest {
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+    width: 100%;
+
+    .biggest-element {
+      display: flex;
+      flex-grow: 1;
+      gap: 10px;
+      padding: 20px;
+      border: 1px solid #ffcccc;
+      border-radius: 12px;
+      background-color: rgb(255, 240, 240);
+
+      .status {
+        width: 100%;
+
+        .name-and-timestamp {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+
+          .name {
+            display: flex;
+            font-weight: 700;
+          }
+
+          .timestamp {
+            display: flex;
+          }
+        }
+
+        .activity-name {
+          margin-bottom: 10px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .divider {
+          border-top: 1px solid #ffcccc;
+          width: 100%;
+          margin-bottom: 5px;
+          /* padding-top: 5px; */
+          /* padding-bottom: 5px; */
+        }
+      }
+
+      .redicon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
