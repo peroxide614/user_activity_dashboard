@@ -1,14 +1,31 @@
 .full-page {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  grid-template-rows: repeat(3, auto);
   padding: 10px;
+
+  .green {
+  }
+
+  .red {
+    border: 1px solid #ffcccc;
+    background-color: rgb(255, 240, 240);
+  }
 
   .two-small-elements {
     margin-top: 10px;
     display: flex;
 
-    .red-small {
+    .one-line-status {
       display: flex;
+      grid-column: span 2;
       gap: 10px;
       padding: 20px;
+      border-radius: 12px;
+
       .redicon {
         width: 20px;
         height: 20px;
@@ -17,7 +34,7 @@
       .small-element-info {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 5px;
+        /* margin-bottom: 5px; */
 
         .name {
           display: flex;
@@ -33,18 +50,20 @@
 
   .two-biggest {
     display: flex;
+    grid-column: span 2;
     gap: 10px;
     /* justify-content: space-between; */
-    width: 100%;
+    /* width: 100%; */
 
     .biggest-element {
       display: flex;
-      flex-grow: 1;
+      flex: 1;
+      /* flex-grow: 1; */
       gap: 10px;
       padding: 20px;
-      border: 1px solid #ffcccc;
+      /* border: 1px solid #ffcccc; */
       border-radius: 12px;
-      background-color: rgb(255, 240, 240);
+      /* background-color: rgb(255, 240, 240); */
 
       .status {
         width: 100%;

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="full-page">
       <div className="two-biggest">
-        <div className="biggest-element">
+        <div className="biggest-element red">
           <div>
             <img src={redicon} className="redicon"></img>
           </div>
@@ -24,7 +24,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="biggest-element">
+        <div className="biggest-element red">
           <div>
             <img src={redicon} className="redicon"></img>
           </div>
@@ -43,14 +43,20 @@ function App() {
         </div>
       </div>
       <div className="two-small-elements">
-        <div className="red-small">
+        <div className="one-line-status red">
           <img src={redicon} className="redicon"></img>
           <div className="small-element-info">
             <div className="name">Last Registration</div>
             <div className="timestamp">2024-07-22T11:15:21.954529+00:00</div>
           </div>
         </div>
-        <div className="green-small"></div>
+        <div className="one-line-status red">
+          <img src={redicon} className="redicon"></img>
+          <div className="small-element-info">
+            <div className="name">Last Registration</div>
+            <div className="timestamp">2024-07-22T11:15:21.954529+00:00</div>
+          </div>
+        </div>
       </div>
     </div>
   );
