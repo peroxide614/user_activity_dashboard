@@ -68,10 +68,14 @@
 }
 
 .last-bet {
+  line-height: 20px;
+  /* display: flex; */
+  /* align-items: center; */
   /* Specific styling for Last Bet card can go here */
 }
 
 .last-payments {
+  line-height: 20px;
   /* Specific styling for Last Payments card can go here */
 }
 
