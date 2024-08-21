@@ -1,44 +1,59 @@
-.full-page {
+.dashboard-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
   gap: 20px;
   padding: 20px;
 }
 
-.biggest-element {
+.red {
   display: flex;
   gap: 10px;
-  flex: 1; /* Ensure elements share equal space */
   padding: 20px;
   border-radius: 12px;
   background-color: rgb(255, 240, 240); /* Light red background */
   border: 1px solid #ffcccc;
 }
 
-.one-line-status {
+.green {
   display: flex;
-  align-items: center;
+  gap: 10px;
   padding: 20px;
   border-radius: 12px;
-  background-color: rgb(255, 240, 240); /* Light red background */
-  border: 1px solid #ffcccc;
-  flex: 1; /* Ensure elements share equal space */
+  background-color: rgb(200, 226, 175); /* Light red background */
+  border: 1px solid #75f36a;
 }
 
-.status {
+.card-content {
   width: 100%;
 }
 
-.name-and-timestamp {
+.small-card-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* flex-direction: column; */
+  gap: 5px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.detail-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
-.activity-name {
-  margin-bottom: 10px;
-  font-size: 18px;
+.detail-name {
   font-weight: 700;
+}
+
+.detail-timestamp {
+  color: #999;
+  font-size: 14px;
 }
 
 .divider {
@@ -47,22 +62,19 @@
   margin-bottom: 5px;
 }
 
-.redicon {
+.status-icon {
   width: 20px;
   height: 20px;
 }
 
-.small-element-info {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.last-bet {
+  /* Specific styling for Last Bet card can go here */
 }
 
-.name {
-  font-weight: 700;
+.last-payments {
+  /* Specific styling for Last Payments card can go here */
 }
 
-.timestamp {
-  color: #999;
-  font-size: 14px;
+.last-registration {
+  /* Specific styling for Last Registration card can go here */
 }
